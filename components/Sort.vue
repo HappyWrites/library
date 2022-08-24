@@ -64,7 +64,7 @@ export default {
 }
 
 .sort__button_active {
-  display: block
+  display: block;
 }
 
 .sort__button_toggle {

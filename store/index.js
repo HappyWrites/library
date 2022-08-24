@@ -37,17 +37,20 @@ export const mutations = {
 
   changeSortByData(state) {
     state.sortByDataActive = true;
-    state.sortByStatusActive = false
+    state.sortByStatusActive = false;
+    state.sortIsActive = false;
   },
 
   changeSortByStatus(state) {
     state.sortByStatusActive = true;
     state.sortByDataActive = false;
+    state.sortIsActive = false;
   },
 
   changeNotSort(state) {
     state.sortByStatusActive = false;
     state.sortByDataActive = false;
+    state.sortIsActive = false;
   },
 
   initialiseStore(state) {

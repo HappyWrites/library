@@ -1,7 +1,8 @@
 <template>
-  <form class="search" @submit.prevent="getSearchValue">
-    <button type="submit" class="search__image"></button>
-    <input class="search__input" placeholder="Поиск ID, Имени, статуса или даты" v-model="searchValue" />
+  <form class="search">
+    <div class="search__image"></div>
+    <input type="search" @input="getSearchValue" class="search__input" placeholder="Поиск ID, Имени, статуса или даты"
+      v-model="searchValue" />
   </form>
 </template>
 
@@ -33,9 +34,6 @@ export default {
   width: 18px;
   height: 18px;
   margin-right: 16px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
 }
 
 .search__input {

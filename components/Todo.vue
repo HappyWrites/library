@@ -37,6 +37,10 @@ export default {
   padding: 20px 0 20px 0;
 }
 
+.todo:hover {
+  background-color: rgb(161, 190, 234);
+}
+
 .todo__title {
   display: flex;
 }
